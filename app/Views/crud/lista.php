@@ -1,34 +1,21 @@
 <div class="card card-outline card-primary rounded-0">
     <div class="card-header">
-        <h4 class="mb-0">List </h4>
+        <h4 class="mb-0">Lista de Imóveis</h4>
     </div>
     <div class="card-body">
         <div class="container-fluid">
             <table class="table table-stripped table-bordered">
-                <colgroup>
-                    <col width="10%">
-                    <col width="30%">
-                    <col width="30%">
-                    <col width="20%">
-                    <col width="10%">
-                </colgroup>
+                
                 <thead>
                     <tr class="bg-gradient bg-primary text-light">
-                       <!--
                         <th class="py-1 text-center">ID</th>
                         <th class="py-1 text-center">Estado</th>
                         <th class="py-1 text-center">Cidade</th>
                         <th class="py-1 text-center">Bairro</th>
+                        <th class="py-1 text-center">Contato</th>
                         <th class="py-1 text-center">Acões</th>
-                        -->
 
-                        <th class="py-1 text-center">#</th>
-                        <th class="py-1 text-center">Gender</th>
-                        <th class="py-1 text-center">contact</th>
-                        <th class="py-1 text-center">email</th>
-                        <th class="py-1 text-center">address</th>
-                        <th class="py-1 text-center">Action</th>
-                
+
                     </tr>
                 </thead>
                 <tbody>
@@ -37,15 +24,15 @@
                         <?php foreach($list as $row): ?>
                             <tr>
                                 <th class="p-1 align-middle text-center"><?= $i++ ?></th>
+                                <td class="p-1 align-middle"><?= $row->estado ?></td>
+                                <td class="p-1 align-middle"><?= $row->cidade ?></td>
+                                <td class="p-1 align-middle"><?= $row->bairro ?></td>
+
                                 <td class="p-1 align-middle"><?= $row->gender ?></td>
                                 <td class="p-1 align-middle"><?= $row->contact ?></td>
                                 <td class="p-1 align-middle"><?= $row->email ?></td>
-                                <td class="p-1 align-middle"><?= $row->address ?></td>
-
-                               
-                                 
-
                                 
+                                <td class="p-1 align-middle"><?= $row->contatoUser ?></td>
                                 <td class="p-1 align-middle text-center">
                                     <div class="btn-group btn-group-sm">
                                         <a href="<?= base_url('main/view_details/'.$row->id) ?>" class="btn btn-default bg-gradient-light border text-dark rounded-0" title="View Contact"><i class="fa fa-eye"></i></a>

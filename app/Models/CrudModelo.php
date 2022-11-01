@@ -6,16 +6,16 @@ use CodeIgniter\Model;
  
 class CrudModel extends Model
 {
-    
+    // Table
+    // Table
     protected $table = 'contact_details';
     // allowed fields to manage
     protected $allowedFields = ['firstname', 'middlename','lastname', 'gender', 'contact', 'email', 'address'];
-
     
     /*
-    protected $table = 'imovel';
+     protected $table = 'imovel';
     // allowed fields to manage
     protected $allowedFields = ['estado', 'cidade','bairro', 'contatoUser'];
-    */
-
+     */
 }
+
