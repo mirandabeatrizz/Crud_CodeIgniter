@@ -42,18 +42,19 @@ class Main extends BaseController
     public function save(){
         $this->data['request'] = $this->request;
         $post = [
-            'firstname' => $this->request->getPost('firstname'),
+            
+            /*'firstname' => $this->request->getPost('firstname'),
             'middlename' => $this->request->getPost('middlename'),
             'lastname' => $this->request->getPost('lastname'),
             'gender' => $this->request->getPost('gender'),
             'contact' => $this->request->getPost('contact'),
             'email' => $this->request->getPost('email'),
-            'address' => $this->request->getPost('address')
+            'address' => $this->request->getPost('address')*/
 
-            /*'estado' => $this->request->getPost('estado'),
+            'estado' => $this->request->getPost('estado'),
             'cidade' => $this->request->getPost('cidade'),
             'bairro' => $this->request->getPost('bairro'),
-            'contatoUser' => $this->request->getPost('contatoUser')*/
+            'contatoUser' => $this->request->getPost('contatoUser')
         ];
         if(!empty($this->request->getPost('id')))
             $save = $this->crud_model->where(['id'=>$this->request->getPost('id')])->set($post)->update();
