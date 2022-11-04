@@ -82,11 +82,11 @@ class Main extends BaseController
         $data['imovel'] = $crud_model->orderBy('id', 'ASC')->findAll();
         return view('list', $data);*/
         
-        $this->data['page_title'] = "List of Contacts";
+        /*$this->data['page_title'] = "List of Contacts";
         $this->data['list'] = $this->crud_model->orderBy('date(date_created) ASC')->select('*')->get()->getResult();
         echo view('templates/header', $this->data);
         echo view('crud/list', $this->data);
-        echo view('templates/footer');
+        echo view('templates/footer');*/
     }
  
     // Edit Form Page
