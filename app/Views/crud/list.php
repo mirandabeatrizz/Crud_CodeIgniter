@@ -14,20 +14,20 @@
                 </colgroup>
                 <thead>
                     <tr class="bg-gradient bg-primary text-light">
-                       <th class="py-1 text-center">ID</th>
+                      <!-- <th class="py-1 text-center">ID</th>
                         <th class="py-1 text-center">Estado</th>
                         <th class="py-1 text-center">Cidade</th>
                         <th class="py-1 text-center">Bairro</th>
-                        <th class="py-1 text-center">Acões</th>
+                        <th class="py-1 text-center">Acões</th>-->
                        
-<!--
+
                         
                         <th class="py-1 text-center">#</th>
                         <th class="py-1 text-center">Gender</th>
                         <th class="py-1 text-center">contact</th>
                         <th class="py-1 text-center">email</th>
-                        <th class="py-1 text-center">address</th>
-                        <th class="py-1 text-center">Action</th>  -->
+                       
+                        <th class="py-1 text-center">Action</th>  
                 
                     </tr>
                 </thead>
@@ -37,13 +37,11 @@
                         <?php foreach($list as $row): ?>
                             <tr>
                                 <th class="p-1 align-middle text-center"><?= $i++ ?></th>
-                                <td class="p-1 align-middle"><?= $row->estado ?></td>
-                                <td class="p-1 align-middle"><?= $row->cidade ?></td>
-                                <td class="p-1 align-middle"><?= $row->bairro ?></td>
-
-                               
-                                 
-
+                              
+                                <td class="p-1 align-middle"><?= $row->gender ?></td>
+                                <td class="p-1 align-middle"><?= $row->contact ?></td>
+                                <td class="p-1 align-middle"><?= $row->email ?></td>
+                            
                                 
                                 <td class="p-1 align-middle text-center">
                                     <div class="btn-group btn-group-sm">

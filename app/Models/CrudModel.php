@@ -7,14 +7,15 @@ use CodeIgniter\Model;
 class CrudModel extends Model
 {
     
-    /*protected $table = 'contact_details';
+    protected $table = 'contact_details';
     // allowed fields to manage
-    protected $allowedFields = ['firstname', 'middlename','lastname', 'gender', 'contact', 'email', 'address'];*/
-
+    protected $allowedFields = ['firstname', 'middlename','lastname', 'gender', 'contact', 'email', 'address'];
     
+    /*
     protected $table = 'imovel';
     // allowed fields to manage
-    protected $allowedFields = ['estado', 'cidade','bairro', 'contatoUser'];
+    protected $allowedFields = ['estado', 'cidade','bairro', 'contatoUser'];*/
+
     
 
 }

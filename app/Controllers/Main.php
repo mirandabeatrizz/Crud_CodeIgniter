@@ -43,18 +43,18 @@ class Main extends BaseController
         $this->data['request'] = $this->request;
         $post = [
             
-            /*'firstname' => $this->request->getPost('firstname'),
+            'firstname' => $this->request->getPost('firstname'),
             'middlename' => $this->request->getPost('middlename'),
             'lastname' => $this->request->getPost('lastname'),
             'gender' => $this->request->getPost('gender'),
             'contact' => $this->request->getPost('contact'),
             'email' => $this->request->getPost('email'),
-            'address' => $this->request->getPost('address')*/
-
+            'address' => $this->request->getPost('address')
+/*
             'estado' => $this->request->getPost('estado'),
             'cidade' => $this->request->getPost('cidade'),
             'bairro' => $this->request->getPost('bairro'),
-            'contatoUser' => $this->request->getPost('contatoUser')
+            'contatoUser' => $this->request->getPost('contatoUser')*/
         ];
         if(!empty($this->request->getPost('id')))
             $save = $this->crud_model->where(['id'=>$this->request->getPost('id')])->set($post)->update();
@@ -78,15 +78,13 @@ class Main extends BaseController
     // List Page
 
     public function list(){
-        /*$crud_model = new CrudModel();
-        $data['imovel'] = $crud_model->orderBy('id', 'ASC')->findAll();
-        return view('list', $data);*/
+       
         
-        /*$this->data['page_title'] = "List of Contacts";
+        $this->data['page_title'] = "List of Contacts";
         $this->data['list'] = $this->crud_model->orderBy('date(date_created) ASC')->select('*')->get()->getResult();
         echo view('templates/header', $this->data);
         echo view('crud/list', $this->data);
-        echo view('templates/footer');*/
+        echo view('templates/footer');
     }
  
     // Edit Form Page
