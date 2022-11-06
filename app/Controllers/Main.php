@@ -56,21 +56,6 @@ class Main extends BaseController
             'cidade' => $this->request->getPost('cidade'),
             'descricao' => $this->request->getPost('descricao')        
 
-            
-
-
-/*          
-            
-            
-           
-            'foto' => $this->request->getPost('foto'),
-                     
-            'descricao' => $this->request->getPost('descricao')
-
-            'estado' => $this->request->getPost('estado'),
-            'cidade' => $this->request->getPost('cidade'),
-            'bairro' => $this->request->getPost('bairro'),
-            'contatoUser' => $this->request->getPost('contatoUser')*/
         ];
         if(!empty($this->request->getPost('id')))
             $save = $this->crud_model->where(['id'=>$this->request->getPost('id')])->set($post)->update();
@@ -78,9 +63,9 @@ class Main extends BaseController
             $save = $this->crud_model->insert($post);
         if($save){
             if(!empty($this->request->getPost('id')))
-            $this->session->setFlashdata('success_message','Data has been updated successfully') ;
+            $this->session->setFlashdata('success_message','Imóvel editado com sucesso') ;
             else
-            $this->session->setFlashdata('success_message','Data has been added successfully') ;
+            $this->session->setFlashdata('success_message','Imóvel cadastrado com sucesso') ;
             $id =!empty($this->request->getPost('id')) ? $this->request->getPost('id') : $save;
             return redirect()->to('/main/view_details/'.$id);
         }else{
@@ -109,7 +94,7 @@ class Main extends BaseController
             $this->session->setFlashdata('error_message','Unknown Data ID.') ;
             return redirect()->to('/main/list');
         }
-        $this->data['page_title'] = "Edit Contact Details";
+        $this->data['page_title'] = "Editar Imóvel";
         $qry= $this->crud_model->select('*')->where(['id'=>$id]);
         $this->data['data'] = $qry->first();
         echo view('templates/header', $this->data);
@@ -125,7 +110,7 @@ class Main extends BaseController
         }
         $delete = $this->crud_model->delete($id);
         if($delete){
-            $this->session->setFlashdata('success_message','Contact Details has been deleted successfully.') ;
+            $this->session->setFlashdata('success_message','Imóvel excluído com sucesso.') ;
             return redirect()->to('/main/list');
         }
     }
@@ -137,7 +122,7 @@ class Main extends BaseController
             return redirect()->to('/main/list');
         }
         $this->data['page_title'] = "View Contact Details";
-        $qry= $this->crud_model->select("*, CONCAT(lastname,', ',firstname,COALESCE(concat(' ', middlename), '')) as `name`")->where(['id'=>$id]);
+        $qry= $this->crud_model->select("*")->where(['id'=>$id]);
         $this->data['data'] = $qry->first();
         echo view('templates/header', $this->data);
         echo view('crud/view', $this->data);

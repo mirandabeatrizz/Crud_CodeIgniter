@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'dummy_db', //nome do banco
+        'database' => 'roomy', //nome do banco
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
