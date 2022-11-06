@@ -43,14 +43,30 @@ class Main extends BaseController
         $this->data['request'] = $this->request;
         $post = [
             
-            'firstname' => $this->request->getPost('firstname'),
-            'middlename' => $this->request->getPost('middlename'),
-            'lastname' => $this->request->getPost('lastname'),
-            'gender' => $this->request->getPost('gender'),
-            'contact' => $this->request->getPost('contact'),
-            'email' => $this->request->getPost('email'),
-            'address' => $this->request->getPost('address')
-/*
+           
+            'contato' => $this->request->getPost('contato'),
+            'estado' => $this->request->getPost('estado'),
+            'tamquarto' => $this->request->getPost('tamquarto'),
+            'tam_imovel' => $this->request->getPost('tam_imovel'),
+            'qtd_ban' => $this->request->getPost('qtd_ban'),
+            'qtd_pessoas' => $this->request->getPost('qtd_pessoas'),
+            'bairro' => $this->request->getPost('bairro'),
+            'inst_prox' => $this->request->getPost('inst_prox'),
+            'tipo' => $this->request->getPost('tipo'),
+            'cidade' => $this->request->getPost('cidade'),
+            'descricao' => $this->request->getPost('descricao')        
+
+            
+
+
+/*          
+            
+            
+           
+            'foto' => $this->request->getPost('foto'),
+                     
+            'descricao' => $this->request->getPost('descricao')
+
             'estado' => $this->request->getPost('estado'),
             'cidade' => $this->request->getPost('cidade'),
             'bairro' => $this->request->getPost('bairro'),

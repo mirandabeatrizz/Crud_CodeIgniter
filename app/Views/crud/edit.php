@@ -21,22 +21,76 @@
                         <option <?= isset($data['gender']) && $data['gender'] == 'Female' ? 'selecte' : '' ?>>Female</option>
                     </select>
                 </div>
+               
                 <div class="mb-3">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <label for="contact" class="control-label">Contact #</label>
-                            <input type="text" class="form-control" id="contact" name="contact" required="required" value="<?= isset($data['contact']) ? $data['contact'] : '' ?>">
+                            <label for="estado" class="control-label">estado </label>
+                            <input type="text" class="form-control" id="estado" name="estado" required="required" value="<?= isset($data['estado']) ? $data['estado'] : '' ?>">
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <label for="email" class="control-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required="required" value="<?= isset($data['email']) ? $data['email'] : '' ?>">
+                            <label for="cidade" class="control-label">cidade</label>
+                            <input type="text" class="form-control" id="cidade" name="cidade" required="required" value="<?= isset($data['cidade']) ? $data['cidade'] : '' ?>">
                         </div>
                     </div>
                 </div>
-                <div class="mb-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <label for="address" class="control-label">Address</label>
-                    <textarea name="address" id="address" cols="30" rows="3" class="form-control" required="required"><?= isset($data['address']) ? $data['address'] : '' ?></textarea>
+                <div class="mb-3">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="tamquarto" class="control-label">tamquarto </label>
+                            <input type="text" class="form-control" id="tamquarto" name="tamquarto" required="required" value="<?= isset($data['tamquarto']) ? $data['tamquarto'] : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="tam_imovel" class="control-label">tam_imovel</label>
+                            <input type="text" class="form-control" id="tam_imovel" name="tam_imovel" required="required" value="<?= isset($data['tam_imovel']) ? $data['tam_imovel'] : '' ?>">
+                        </div>
+                    </div>
                 </div>
+                <div class="mb-3">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="bairro" class="control-label">bairro </label>
+                            <input type="text" class="form-control" id="bairro" name="bairro" required="required" value="<?= isset($data['bairro']) ? $data['bairro'] : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="inst_prox" class="control-label">inst_prox</label>
+                            <input type="text" class="form-control" id="inst_prox" name="inst_prox" required="required" value="<?= isset($data['inst_prox']) ? $data['inst_prox'] : '' ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="qtd_ban" class="control-label">qtd_ban </label>
+                            <input type="text" class="form-control" id="qtd_ban" name="qtd_ban" required="required" value="<?= isset($data['qtd_ban']) ? $data['qtd_ban'] : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="qtd_pessoas" class="control-label">qtd_pessoas</label>
+                            <input type="text" class="form-control" id="qtd_pessoas" name="qtd_pessoas" required="required" value="<?= isset($data['qtd_pessoas']) ? $data['qtd_pessoas'] : '' ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="tipo" class="control-label">tipo </label>
+                            <input type="text" class="form-control" id="tipo" name="tipo" required="required" value="<?= isset($data['tipo']) ? $data['tipo'] : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="descricao" class="control-label">descricao</label>
+                            <input type="text" class="form-control" id="descricao" name="descricao" required="required" value="<?= isset($data['descricao']) ? $data['descricao'] : '' ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="contato" class="control-label">contato </label>
+                            <input type="text" class="form-control" id="contato" name="contato" required="required" value="<?= isset($data['contato']) ? $data['contato'] : '' ?>">
+                        </div>
+                    </div>
+                </div>
+                
             </form>
         </div>
     </div>

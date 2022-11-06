@@ -6,11 +6,13 @@
         <div class="container-fluid">
             <table class="table table-stripped table-bordered">
                 <colgroup>
+                   <!-- <col width="10%">
                     <col width="10%">
-                    <col width="30%">
-                    <col width="30%">
+                    <col width="15%">
+                    <col width="15%">                    
+                    <col width="10%">
                     <col width="20%">
-                    <col width="10%">
+                    <col width="10%">-->
                 </colgroup>
                 <thead>
                     <tr class="bg-gradient bg-primary text-light">
@@ -23,10 +25,17 @@
 
                         
                         <th class="py-1 text-center">#</th>
-                        <th class="py-1 text-center">Gender</th>
-                        <th class="py-1 text-center">contact</th>
-                        <th class="py-1 text-center">email</th>
-                       
+                        <th class="py-1 text-center">tamanho imovel</th>
+                        <th class="py-1 text-center">banheiro</th>
+                        <th class="py-1 text-center">tamquarto</th>
+                        <th class="py-1 text-center">estado</th>
+                        <th class="py-1 text-center">cidade</th>
+                        <th class="py-1 text-center">pessoas</th>
+                        <th class="py-1 text-center">bairro</th>
+                        <th class="py-1 text-center">intituicao proxima</th>
+                        <th class="py-1 text-center">tipo</th>
+                        <th class="py-1 text-center">contato</th>
+                        <th class="py-1 text-center">descricao</th>
                         <th class="py-1 text-center">Action</th>  
                 
                     </tr>
@@ -37,11 +46,18 @@
                         <?php foreach($list as $row): ?>
                             <tr>
                                 <th class="p-1 align-middle text-center"><?= $i++ ?></th>
-                              
-                                <td class="p-1 align-middle"><?= $row->gender ?></td>
-                                <td class="p-1 align-middle"><?= $row->contact ?></td>
-                                <td class="p-1 align-middle"><?= $row->email ?></td>
-                            
+                                <td class="p-1 align-middle"><?= $row->tam_imovel ?></td>
+                                <td class="p-1 align-middle"><?= $row->qtd_ban ?></td>
+                                <td class="p-1 align-middle"><?= $row->tamquarto ?></td>
+                                <td class="p-1 align-middle"><?= $row->estado ?></td>
+                                <td class="p-1 align-middle"><?= $row->cidade ?></td>
+                                <td class="p-1 align-middle"><?= $row->qtd_pessoas ?></td>
+                                <td class="p-1 align-middle"><?= $row->bairro ?></td>
+                                <td class="p-1 align-middle"><?= $row->inst_prox ?></td>
+                                <td class="p-1 align-middle"><?= $row->tipo ?></td>
+                                <td class="p-1 align-middle"><?= $row->contato ?></td>
+                                <td class="p-1 align-middle"><?= $row->descricao ?></td>
+
                                 
                                 <td class="p-1 align-middle text-center">
                                     <div class="btn-group btn-group-sm">

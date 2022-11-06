@@ -8,36 +8,69 @@
                 <input type="hidden" name="id">
  
                 <div class="mb-3">
-                    <label for="" class="control-label">Fullname (first name, middle name, last name)</label>
-                    <div class="input-group">
-                        <input type="text" autofocus class="form-control form-control-border" id="firstname" name="firstname" value="<?= !empty($request->getPost('firstname')) ? $request->getPost('firstname') : '' ?>" required="required" placeholder="First Name">
-                        <input type="text" class="form-control form-control-border" id="middlename" name="middlename" value="<?= !empty($request->getPost('middlename')) ? $request->getPost('middlename') : '' ?>" required="false" placeholder="Middle Name (optional)">
-                        <input type="text" class="form-control form-control-border" id="lastname" name="lastname" value="<?= !empty($request->getPost('lastname')) ? $request->getPost('lastname') : '' ?>" required="required" placeholder="Last Name">
-                    </div>
-                </div>
-                <div class="mb-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <label for="gender" class="control-label">Gender</label>
-                    <select name="gender" id="gender" class="form-select form-select-border" required>
-                        <option <?= !empty($request->getPost('gender')) && $request->getPost('gender') == 'Male' ? 'selecte' : '' ?>>Male</option>
-                        <option <?= !empty($request->getPost('gender')) && $request->getPost('gender') == 'Female' ? 'selecte' : '' ?>>Female</option>
-                    </select>
-                </div>
-                <div class="mb-3">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <label for="contact" class="control-label">Contact #</label>
-                            <input type="text" class="form-control" id="contact" name="contact" required="required" value="<?= !empty($request->getPost('contact')) ? $request->getPost('contact') : '' ?>">
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <label for="email" class="control-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required="required" value="<?= !empty($request->getPost('email')) ? $request->getPost('email') : '' ?>">
+                            <label for="contato" class="control-label">contato </label>
+                            <input type="text" class="form-control" id="contato" name="contato" required="required" value="<?= !empty($request->getPost('contato')) ? $request->getPost('contato') : '' ?>">
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="estado" class="control-label">estado #</label>
+                            <input type="text" class="form-control" id="estado" name="estado" required="required" value="<?= !empty($request->getPost('estado')) ? $request->getPost('estado') : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="tamquarto" class="control-label">tamquarto #</label>
+                            <input type="text" class="form-control" id="tamquarto" name="tamquarto" required="required" value="<?= !empty($request->getPost('tamquarto')) ? $request->getPost('tamquarto') : '' ?>">
+                        </div>
+                        <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="tam_imovel" class="control-label">tam_imovel #</label>
+                            <input type="text" class="form-control" id="tam_imovel" name="tam_imovel" required="required" value="<?= !empty($request->getPost('tam_imovel')) ? $request->getPost('tam_imovel') : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="qtd_ban" class="control-label">qtd_ban</label>
+                            <input type="text" class="form-control" id="qtd_ban" name="qtd_ban" required="required" value="<?= !empty($request->getPost('qtd_ban')) ? $request->getPost('qtd_ban') : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="qtd_pessoas" class="control-label">qtd_pessoas</label>
+                            <input type="text" class="form-control" id="qtd_pessoas" name="qtd_pessoas" required="required" value="<?= !empty($request->getPost('qtd_pessoas')) ? $request->getPost('qtd_pessoas') : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="bairro" class="control-label">bairro</label>
+                            <input type="text" class="form-control" id="bairro" name="bairro" required="required" value="<?= !empty($request->getPost('bairro')) ? $request->getPost('bairro') : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="inst_prox" class="control-label">inst_prox</label>
+                            <input type="text" class="form-control" id="inst_prox" name="inst_prox" required="required" value="<?= !empty($request->getPost('inst_prox')) ? $request->getPost('inst_prox') : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="tipo" class="control-label">tipo</label>
+                            <input type="text" class="form-control" id="tipo" name="tipo" required="required" value="<?= !empty($request->getPost('tipo')) ? $request->getPost('tipo') : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="cidade" class="control-label">cidade</label>
+                            <input type="text" class="form-control" id="cidade" name="cidade" required="required" value="<?= !empty($request->getPost('cidade')) ? $request->getPost('cidade') : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="descricao" class="control-label">descricao</label>
+                            <input type="text" class="form-control" id="descricao" name="descricao" required="required" value="<?= !empty($request->getPost('descricao')) ? $request->getPost('descricao') : '' ?>">
+                        </div>
+                        
                 </div>
-                <div class="mb-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <label for="address" class="control-label">Address</label>
-                    <textarea name="address" id="address" cols="30" rows="3" class="form-control" required="required"><?= !empty($request->getPost('address')) ? $request->getPost('address') : '' ?></textarea>
-                </div>
+                <!--<div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="tam_imovel" class="control-label">tam_imovel </label>
+                            <input type="text" class="form-control" id="tam_imovel" name="tam_imovel" required="required" value="<?= !empty($request->getPost('tam_imovel')) ? $request->getPost('tam_imovel') : '' ?>">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <label for="qtd_ban" class="control-label">qtd_ban #</label>
+                            <input type="text" class="form-control" id="qtd_ban" name="qtd_ban" required="required" value="<?= !empty($request->getPost('qtd_ban')) ? $request->getPost('qtd_ban') : '' ?>">
+                        </div>
+                        <div class="row">
+                </div>-->
+                        
+                
             </form>
         </div>
     </div>

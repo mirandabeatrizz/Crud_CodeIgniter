@@ -5,16 +5,30 @@
     <div class="card-body">
         <div class="container-fluid">
             <dl>
-                <dt class="text-muted">Name</dt>
-                <dd class="ps-4"><?= isset($data['name']) ? $data['name'] : '' ?></dd>
-                <dt class="text-muted">Gender</dt>
-                <dd class="ps-4"><?= isset($data['gender']) ? $data['gender'] : '' ?></dd>
-                <dt class="text-muted">Contact #</dt>
-                <dd class="ps-4"><?= isset($data['contact']) ? $data['contact'] : '' ?></dd>
-                <dt class="text-muted">Email</dt>
-                <dd class="ps-4"><?= isset($data['email']) ? $data['email'] : '' ?></dd>
-                <dt class="text-muted">Address</dt>
-                <dd class="ps-4"><?= isset($data['address']) ? $data['address'] : '' ?></dd>
+                <dt class="text-muted">Estado</dt>
+                <dd class="ps-4"><?= isset($data['estado']) ? $data['estado'] : '' ?></dd>
+                <dt class="text-muted">Cidade</dt>
+                <dd class="ps-4"><?= isset($data['cidade']) ? $data['cidade'] : '' ?></dd>
+                <dt class="text-muted">Bairro</dt>
+                <dd class="ps-4"><?= isset($data['bairro']) ? $data['bairro'] : '' ?></dd>
+                <dt class="text-muted">Descrição</dt>
+                <dd class="ps-4"><?= isset($data['descricao']) ? $data['descricao'] : '' ?></dd>
+                <dt class="text-muted">Tipo do Imóvel</dt>
+                <dd class="ps-4"><?= isset($data['tipo']) ? $data['tipo'] : '' ?></dd>
+                <dt class="text-muted">Instituição Próxima</dt>
+                <dd class="ps-4"><?= isset($data['inst_prox']) ? $data['inst_prox'] : '' ?></dd>
+                <dt class="text-muted">Tamanho do Imóvel</dt>
+                <dd class="ps-4"><?= isset($data['tam_imovel']) ? $data['tam_imovel'] : '' ?></dd>
+                <dt class="text-muted">Tamanho do quarto</dt>
+                <dd class="ps-4"><?= isset($data['tamquarto']) ? $data['tamquarto'] : '' ?></dd>
+                <dt class="text-muted">Quantidade de Pessoas</dt>
+                <dd class="ps-4"><?= isset($data['qtd_pessoas']) ? $data['qtd_pessoas'] : '' ?></dd>
+                <dt class="text-muted">Quantidade de Banheiros</dt>
+                <dd class="ps-4"><?= isset($data['qtd_ban']) ? $data['qtd_ban'] : '' ?></dd>
+                
+                
+                
+                
             </dl>
         </div>
     </div>
